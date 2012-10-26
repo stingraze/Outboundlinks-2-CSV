@@ -2,7 +2,7 @@ use strict;
 use Data::Dumper;
 use WWW::Mechanize;
 
-my $mech = new WWW::Mechanize;
+my $mech = WWW::Mechanize->new(autocheck => 1);;
 my $count = 0;
 my $dbfile = "seeds.txt";
 my $url;
@@ -17,7 +17,12 @@ foreach (@lines){
 	chomp;
 
 	$url = $_;
-	$mech->get($url);
+
+	eval { $mech->get($url); };
+	if ($@) {
+	warn $mech->status, " : $@";
+	print "error";
+	}
 
 	my $hostname = quotemeta( $mech->uri()->host );
 
