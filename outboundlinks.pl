@@ -2,7 +2,7 @@ use strict;
 use Data::Dumper;
 use WWW::Mechanize;
 
-my $mech = WWW::Mechanize->new(autocheck => 1);;
+my $mech = WWW::Mechanize->new(autocheck => 1);
 my $count = 0;
 my $dbfile = "seeds.txt";
 my $url;
