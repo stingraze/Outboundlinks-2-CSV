@@ -8,7 +8,7 @@ use perl to run outboundlinks.pl .
 There will be two files that will be made,
 
 alllinks.txt
-outboundlinks.csv
+outboundlinks.txt
 
 alllinks.txt contains all outbound URL found starting from seeds.txt . 
 
