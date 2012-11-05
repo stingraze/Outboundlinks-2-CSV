@@ -17,3 +17,7 @@ outboundlinks.csv is the CSV with URL and count of how many outbound URL there i
 Enjoy.
 
 Tsubasa Kato (@stingraze)
+
+http://stingraze.wordpress.com
+
+tsubasa_kato@hotmail.com
