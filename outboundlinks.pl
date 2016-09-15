@@ -2,7 +2,7 @@ use strict;
 use WWW::Mechanize;
 
 my $mech = WWW::Mechanize->new(autocheck => 1);
-my $count = 0;
+my $count = 1;
 my $dbfile = "seeds.txt";
 my $url;
 
@@ -37,10 +37,13 @@ foreach (@lines){
 		print OUT "\n";
 		close(OUT); 
 		#changed below.
+		print $count;
+		print "\n";
+		
 		print ${_}->url_abs;
 
 		print "\n";
-		print $count;
+		
 		print "\n";
 		$count++;
 	}
