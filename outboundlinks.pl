@@ -36,7 +36,9 @@ foreach (@lines){
 		print OUT ${_}->url_abs;
 		print OUT "\n";
 		close(OUT); 
-		print $url;
+		#changed below.
+		print ${_}->url_abs;
+
 		print "\n";
 		print $count;
 		print "\n";
