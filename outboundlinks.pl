@@ -39,7 +39,7 @@ foreach (@lines){
 		#changed below.
 		print $count;
 		print "\n";
-		
+
 		print ${_}->url_abs;
 
 		print "\n";
@@ -55,4 +55,4 @@ foreach (@lines){
 
 }
 
-print "finished";
+print "finished\n";
